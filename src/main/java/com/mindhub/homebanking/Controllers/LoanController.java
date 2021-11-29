@@ -79,7 +79,7 @@ public class LoanController {
 
         Account accountTo = accountRepository.findByNumber(loanApplicationDTO.getDestinationAccountNumber());
 
-        Loan loan = loanRepository.getById(loanApplicationDTO.getLoanId());
+        Loan loan = loanRepository.findById(loanApplicationDTO.getLoanId()).orElse(null);
 
         double amountRequested = amountRequestedPlus(loanApplicationDTO.getAmountRequest());
 
