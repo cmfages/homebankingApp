@@ -154,12 +154,12 @@
                       <div class="modal-content divForm">
                         <div class="modal-body divForm">
                           <form v-on:submit.prevent="deleteAccount">
-                            Select the account do you want to delete
+                            Select the account do you want to delete...
                             <select v-model="accountNumber" name="selectAnAccount" id="selectAccount" class="mb-3">
                                <option v-for="account in accounts" :value="account.number">Account {{account.number}}</option>
                              </select>
                             <div class="modal-footer divForm">
-                               <button type="submit" class="btn btn-danger">Delete card</button>
+                               <button type="submit" class="btn btn-danger">Delete account</button>
                             </div>
                           </form>
                         </div>
