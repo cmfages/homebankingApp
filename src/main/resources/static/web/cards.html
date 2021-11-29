@@ -201,6 +201,20 @@
                             </div>
                         </div>
                       </fieldset>
+                        <div class="mb-3">
+                            <div v-if="type === DEBIT">
+                                <p>You can make cash deposits to the associated account.</p>
+                                <p>Withdraw cash at ATMs.</p>
+                                <p>Pay in physical establishments with it.</p>
+                                <p>Make purchases online.</p>
+                            </div>
+                            <div v-if="type === CREDIT">
+                                <p>Allows you to make term purchases.</p>
+                                <p>It has a court date and a payment date.</p>
+                                <p>You can use it in virtual or physical businesses.</p>
+                                <p>Although it involves a commission, you can withdraw at ATMs.</p>
+                            </div>
+                        </div>
                       <div class="modal-footer divForm">
                         <button type="submit" class="btn btn-warning">Get One</button>
                       </div>
