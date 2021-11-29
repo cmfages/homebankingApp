@@ -46,7 +46,7 @@ const app = Vue.createApp({
             .then(response => {
                 console.log(response);
                 this.loginRegister(this.clientRegister.email, this.clientRegister.password);
-                swal('Approved', 'Registration complete. Redirecting...', 'success')
+                swal('Approved', 'Registration complete. Redirecting...')
             })
             .catch(err => {
                 console.log(err);

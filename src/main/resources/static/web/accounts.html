@@ -135,14 +135,14 @@
                           <!--<p class="card-text">Number: <span v-cloak>{{account.number}}</span></p>-->
                           <p class="card-text">Balance: <span class="text-success" v-cloak>${{account.balance}}</span></p>
                           <p class="card-text">Date: <span v-cloak>{{account.createDate}}</span></p>
-                          <button type="button" class="btn btn-success"><a class="btn-account text-white" v-bind:href="`./account.html?id=${account.id}`">Movements</a></button>
+                          <button type="button" class="btn btn-info d-flex align-self-center justify-content-center"><a class="btn-account text-white" v-bind:href="`./account.html?id=${account.id}`">Movements</a></button>
                         </div>
                       </div>
                 </div>
                 <div class="container d-flex flex-row flex-wrap justify-content-center">
                   <button @click="newAccount" type="button" class="btn btn-info d-flex align-self-center justify-content-center col-2 m-2">Get One</button>
 
-                  <button class="btn btn-danger d-flex align-self-center justify-content-center col-2 m-2" data-bs-toggle="modal" data-bs-target="#exampleModalCard">Delete an account</button>
+                  <button class="btn btn-danger d-flex align-self-center justify-content-center col-2 m-2" data-bs-toggle="modal" data-bs-target="#exampleModalCard">Delete account</button>
                 </div>
                 
 
