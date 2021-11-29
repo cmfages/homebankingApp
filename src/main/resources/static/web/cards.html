@@ -130,7 +130,7 @@
           <p v-else class="d-flex justify-content-center fs-4 text-primary">Sorry, you do not have any card.</p>
           <div class="d-flex flex-wrap justify-content-center">
             <div v-for="card in cards" class="card card-all">
-              <div class="card__front card__part" :class="card.color">
+              <div class="card__front card__part" v-bind:class="card.color">
                 <img class="card__front-square card__square" src="./img/card-chip-model.png">
                 <img v-if="card.type === 'CREDIT'" class="card__front-logo card__logo" src="./img/visa-logo-card.png">
                 <img v-else class="card__front-logo card__logo" src="./img/visa-debit-card-img.png">
@@ -144,7 +144,7 @@
                   <p class="card__info">{{card.thruDate}}</p>
                 </div>
               </div>
-              <div class="card__back card__part" :class="card.color">
+              <div class="card__back card__part" v-bind:class="card.color">
                 <div class="card__black-line"></div>
                 <div class="card__back-content">
                   <div class="card__secret">
