@@ -129,7 +129,7 @@
                 <h2 v-if="hasAccounts()" class="d-flex flex-wrap justify-content-center">Welcome to your Accounts,  <span v-cloak> {{client.firstName}} {{client.lastName}}</span>!</h2>
                 <p v-else class="d-flex justify-content-center fs-4 text-primary">Sorry, you do not have an active account.</p>
                 <div class="d-flex flex-wrap justify-content-center">
-                    <div v-for="account in accounts" class="card m-3 shadow rounded" style="width: 18rem;">
+                    <div v-for="account in accounts" class="card m-3 shadow rounded">
                         <div class="card-body">
                           <h5 class="card-title">Account: <span v-cloak>{{account.number}}</span></h5>
                           <!--<p class="card-text">Number: <span v-cloak>{{account.number}}</span></p>-->

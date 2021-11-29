@@ -129,7 +129,7 @@
                 <h2 v-if="hasLoans()" class="d-flex flex-wrap justify-content-center">Welcome to your Loans, <span v-cloak>{{client.firstName}} {{client.lastName}}!</span>!</h2>
                 <p v-else class="d-flex justify-content-center fs-4 text-primary">Sorry, you do not have an active loan.</p>
                 <div class="d-flex flex-wrap justify-content-center">
-                    <div v-for="clientLoan in clientLoans" class="card m-3 shadow rounded" style="width: 18rem;">
+                    <div v-for="clientLoan in clientLoans" class="card m-3 shadow rounded">
                         <div class="card-body">
                           <h5 class="card-title">Loan {{clientLoan.id}}</h5>
                           <p class="card-text">Type: <span v-cloak>{{clientLoan.loanName}}</span></p>

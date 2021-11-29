@@ -254,12 +254,6 @@ footer {
   display: block
 }
 
-/*p {
-  color: rgba(0, 0, 0, .5);
-  margin: 0 auto 4em;
-  max-width: 400px;
-  text-align: center
-}*/
 
 #socialShare {
   width: 25%;
@@ -396,8 +390,8 @@ footer {
   
   
 .card-all{
-  width: 320px;
-  height: 190px;
+  width: 250px;
+  height: 150px;
     -webkit-perspective: 600px;
     -moz-perspective: 600px;
     perspective:600px;
@@ -411,8 +405,8 @@ footer {
     z-index: 1000;
     left: 0;
     display: inline-block;
-    width: 320px;
-    height: 190px;
+    width: 250px;
+    height: 150px;
     
     /*background-image: url('https://image.ibb.co/bVnMrc/g3095.png'), linear-gradient(to right bottom, #fd696b, #fa616e, #f65871, #f15075, #ec4879); /*linear-gradient(to right bottom, #fd8369, #fc7870, #f96e78, #f56581, #ee5d8a)*/
     background-repeat: no-repeat;
